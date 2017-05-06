@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Friend Finder - Survey</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<h1>Survey Questions</h1>
+			<br>
+			<hr>
+				<form method="POST" action="/api/friends">
+					<h3>About You</h3>
+					<fieldset class="form-group">
+						<label for="name">Name (Required)</label>
+						<input type="text" class="form-control" placeholder="Your Name" id="name" name="name" required>
+					</fieldset>
+					<fieldset class="form-group">
+						<label for="photo">Link to Photo Image (Required)</label>
+						<input type="text" class="form-control" placeholder="http://yourpic.jpg" id="photo" name="photo" required>
+					</fieldset>
+					<hr>
+
+					<h4>Question 1</h4>
+					<fieldset class="form-group">
+						<label for="question01">It's time for the percolator.</label>
+						<br>
+						<div class="col-md-4">
+							<select class="form-control" id="question01" name="scores[0]">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<h4>Question 2</h4>
+					<fieldset class="form-group">
+						<label for="question02">Peanut butter should always be crunchy.</label>
+						<br>
+						<div class="col-md-4">
+							<select class="form-control" id="question02" name="scores[1]">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<h4>Question 3</h4>
+					<fieldset class="form-group">
+						<label for="question03">The secret ingredient is sometimes love, but usually guilt.</label>
+						<br>
+						<div class="col-md-4">
+							<select class="form-control" id="question03" name="scores[2]">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<h4>Question 4</h4>
+					<fieldset class="form-group">
+						<label for="question04">Sexy was already back.</label>
+						<br>
+						<div class="col-md-4">
+							<select class="form-control" id="question04" name="scores[3]"">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<h4>Question 5</h4>
+					<fieldset class="form-group">
+						<label for="question05">The safest place to be during a tornado is with Helen Hunt.</label>
+						<br>
+						<div class="col-md-4">
+							<select class="form-control" id="question05" name="scores[4]">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<h4>Question 6</h4>
+					<fieldset class="form-group">
+						<label for="question06">Spelling and grammar mistakes annoy me.</label>
+						<br>
+						<div class="col-md-4">
+							<select class="form-control" id="question06" name="scores[5]">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<h4>Question 7</h4>
+					<fieldset class="form-group">
+						<label for="question07">I love the taste of beer.</label>
+						<br>
+						<div class="col-md-4">
+							<select class="form-control" id="question07" name="scores[6]">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<h4>Question 8</h4>
+					<fieldset class="form-group">
+						<label for="question08">Snitches should have higher copays for stitches.</label>
+						<br>
+						<div class="col-md-4">
+							<select class="form-control" id="question08" name="scores[7]">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<h4>Question 9</h4>
+					<fieldset class="form-group">
+						<label for="question09">The best leg exercise is frantically kicking your problems down the road.</label>
+						<br>
+						<div class="col-md-4">
+							<select class="form-control" id="question09" name="scores[8]">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<h4>Question 10</h4>
+					<fieldset class="form-group">
+						<label for="question10">There's no party like a house party.</label>
+						<br>
+						<div class="col-md-4">
+							<select class="form-control" id="question10" name="scores[9]">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</fieldset><br>
+					<input type="submit" class="btn btn-primary" value="Request Friend" id="submit">
+				</form>
+		</div>
+		<hr>
+		<a href="/api/friends">API Friends List</a>
+	</div>
+
+	<div id="bestFriendModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">X</button>
+					<h2 class="modal-title">Best Match</h2>
+				</div>
+				<div class="modal-body">
+					<h2 id="bestFriendName"></h2>
+					<img id="bestFriendImg" src="http://www.imagenspng.com.br/wp-content/uploads/2015/07/minions-03.png" onError="this.src='http://www.imagenspng.com.br/wp-content/uploads/2015/07/minions-03.png'" width=500px alt="Best Friend">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type='text/javascript'>
+		$('#submit').on('click', function() {
+			var userInput = {
+				name: $('#name').val().trim(),
+				photo: $('#photo').val().trim(),
+				scores: [$('#question01').val().trim(), $('#question02').val().trim(), $('#question03').val().trim(), $('#question04').val().trim(), $('#question05').val().trim(), $('#question06').val().trim(), $('#question07').val().trim(), $('#question08').val().trim(), $('#question09').val().trim(), $('#question10').val().trim()]
+			}
+			var currentURL = window.location.origin;
+			$.post(currentURL + '/api/friends', userInput, function(data) {
+				$('#bestFriendName').text(data.name);
+				$('#bestFriendImg').attr('src', data.photo);
+				$('#bestFriendModal').modal('show');
+			});
+			return false;
+		});
+	</script>
+</body>
+</html>
